@@ -71,6 +71,7 @@ const addPost = async (req: Request, res: Response, next: NextFunction) => {
         title,
         body
     });
+    console.log('request', req.body);
     // return response
     return res.status(200).json({
         message: response.data
