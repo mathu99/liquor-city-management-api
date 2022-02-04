@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/01f690a8-0e26-4f1a-84de-d739b7f74e4a/resourceGroups/Non-Prod/providers/Microsoft.Web/sites/liquor-city-api",
+    "appService.deploySubpath": "."
+}
