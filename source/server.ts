@@ -1,7 +1,8 @@
 import http from 'http';
 import express, { Express } from 'express';
 import morgan from 'morgan';
-import routes from './routes/posts';
+import postRoutes from './routes/posts';
+import categoryRoutes from './routes/category';
 
 const router: Express = express();
 
@@ -27,7 +28,8 @@ router.use((req, res, next) => {
 });
 
 /** Routes */
-router.use('/', routes);
+router.use('/', categoryRoutes);
+router.use('/', postRoutes);
 
 /** Error handling */
 router.use((req, res, next) => {
