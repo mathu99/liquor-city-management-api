@@ -19,7 +19,7 @@ const addCategory = async (req: Request, res: Response, next: NextFunction) => {
     //     title,
     //     body
     // });
-    console.log('request', req.body);
+    console.log('Add Category', JSON.stringify(req.body));
     // return response
     return res.status(200).json({
         // message: response.data
@@ -37,7 +37,7 @@ const editCategory = async (req: Request, res: Response, next: NextFunction) => 
     //     title,
     //     body
     // });
-    console.log('request', req.body);
+    console.log('Edit Category', JSON.stringify(req.body));
     // return response
     return res.status(200).json({
         // message: response.data

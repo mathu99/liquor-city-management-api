@@ -3,6 +3,7 @@ import express, { Express } from 'express';
 import morgan from 'morgan';
 import postRoutes from './routes/posts';
 import categoryRoutes from './routes/category';
+import payloadRoutes from './routes/payload';
 
 const router: Express = express();
 
@@ -28,6 +29,7 @@ router.use((req, res, next) => {
 });
 
 /** Routes */
+router.use('/', payloadRoutes); // generic endpoint to test any webhook payload
 router.use('/', categoryRoutes);
 router.use('/', postRoutes);
 
